@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --gray-shade1: #f5f5f6;
+  --gray-shade2: #696e79;
+  --grey-shade3: #495057;
+  --dark-blue: #0751a6;
+  --blue-shade1: #024ca1;
+}
+.desktop-header-container {
+  /* color: #fff; */
+  top: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+  height: 4.4rem;
+  background-color: var(--white);
+  /* margin: auto; */
+  align-items: center;
+}
+.logo-container {
+  margin-left: 3%;
+  flex: 0 1 auto;
+}
+.brand-logo {
+  color: var(--blue-shade1);
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.navbar {
+  margin-left: 3%;
+  flex: 0 1 auto;
+}
+.nav-items {
+  text-align: center;
+  padding: 0 17px 28px;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  border-bottom: none;
+  font-weight: 500;
+  color: var(--black);
+}
+.flex {
+  display: flex;
+}
+.input-search-bar {
+  font-size: 0.875rem;
+  /* height: 20px;
+  line-height: 24px; */
+  color: var(--gray-shade2);
+  padding: 0.5rem 0.625rem 0.625rem;
+  margin: 0;
+  outline: 0;
+  border: 1px solid var(--gray-shade1);
+  border-radius: 0 0.25rem 0.25rem 0;
+  border-left: 0;
+  background: var(--gray-shade1);
+  width: 95%;
+}
+.search-icon {
+  text-align: center;
+  padding: 0.5rem 0.5rem 0.625rem;
+  background: var(--gray-shade1);
+  border: 1px solid var(--gray-shade1);
+  border-right: none;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+.fa-search {
+  color: var(--gray-shade2);
+}
+.search-bar {
+  flex: 3 0 auto;
+  margin-left: 2%;
+}
+.header-actions {
+  flex: 1 1 auto;
+  margin-right: 3%;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+.action-link {
+  text-align: center;
+}
+.main-content {
+  margin-top: 4.3rem;
+}
+.hero-section {
+  /* width: 100%;
+  height: 100vh; */
+
+  overflow: hidden;
+}
+.hero-image {
+  object-fit: cover;
+  width: 100%;
+  height: 90vh;
+}
+
+.features-card {
+  justify-content: center;
+  padding: 1.5rem 0 3rem 0;
+  font-size: 1.3rem;
+  /* align-items: center; */
+}
+.divider {
+  color: var(--gray-shade2);
+  width: 1px;
+}
+.feature {
+  padding: 1rem 3rem;
+  align-items: center;
+}
+.feature .fa {
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+.feature h3 {
+  margin: 0.7rem 0;
+}
+
+.categories-card {
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 5rem;
+  gap: 1rem;
+}
+.single-category {
+  background-color: var(--gray-shade1);
+  position: relative;
+}
+.single-category h4 {
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #c7c7c7e5;
+}
+
+.category-image {
+  object-fit: cover;
+  border-radius: 5px;
+  object-position: center bottom;
+  opacity: 0.8;
+}
+.card-hw {
+  min-width: 350px;
+  max-width: 350px;
+  min-height: 230px;
+  max-height: 230px;
+}
+.ts-image {
+  background-color: var(--gray-shade1);
+  object-fit: cover;
+  border-radius: 5px;
+  min-height: 350px;
+  max-height: 350px;
+  min-width: 350px;
+  max-width: 350px;
+}
+.top-selling {
+  text-align: center;
+  margin: 5rem 0;
+}
+.ts-h5 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.25rem;
+}
+.featured-h3 {
+  font-size: 3.2rem;
+  margin-bottom: 1.25rem;
+  color: var(--dark-blue);
+}
+.ts-headline {
+  padding: 0 30%;
+  margin-bottom: 1.25rem;
+}
+.top-sell-cards {
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 7rem;
+  gap: 1rem;
+}
+.ts-product h3 {
+  margin-top: 1.25rem;
+}
+.ts-product h3 a {
+  color: var(--black);
+}
+.ts-product h4 {
+  margin: 0.5rem 0 2rem 0;
+  color: var(--grey-shade3);
+}
+a {
+  text-decoration: none;
+}
+
+/* ***********footer************** */
+.footer {
+  padding: 5rem 6.875rem;
+  background-color: var(--gray-shade1);
+  gap: 6rem;
+}
+.footer div:nth-child(1) {
+  flex-basis: 30%;
+}
+.footer div:nth-child(2) {
+  margin-left: 5rem;
+}
+.footer a {
+  color: var(--gray-shade3);
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.footer-col {
+  gap: 1rem;
+  flex-grow: 1;
+}
