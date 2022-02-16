@@ -6,26 +6,24 @@
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
 }
+
 :root {
-  --black: #000000;
-  --white: #ffffff;
   --gray-shade1: #f5f5f6;
   --gray-shade2: #696e79;
   --grey-shade3: #495057;
+  --transaparent-grey: #c7c7c7e5;
   --dark-blue: #0751a6;
   --blue-shade1: #024ca1;
 }
 .desktop-header-container {
-  /* color: #fff; */
   top: 0;
   position: fixed;
   right: 0;
   left: 0;
-  z-index: 999;
+  z-index: 9;
   box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
   height: 4.4rem;
   background-color: var(--white);
-  /* margin: auto; */
   align-items: center;
 }
 .logo-container {
@@ -39,13 +37,13 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
-.navbar {
+.top-navbar {
   margin-left: 3%;
   flex: 0 1 auto;
 }
 .nav-items {
   text-align: center;
-  padding: 0 17px 28px;
+  padding: 0 1.063rem 1.75rem;
   text-decoration: none;
   letter-spacing: 0.3px;
   border-bottom: none;
@@ -57,8 +55,6 @@
 }
 .input-search-bar {
   font-size: 0.875rem;
-  /* height: 20px;
-  line-height: 24px; */
   color: var(--gray-shade2);
   padding: 0.5rem 0.625rem 0.625rem;
   margin: 0;
@@ -93,13 +89,10 @@
 .action-link {
   text-align: center;
 }
-.main-content {
+.main-content-container {
   margin-top: 4.3rem;
 }
 .hero-section {
-  /* width: 100%;
-  height: 100vh; */
-
   overflow: hidden;
 }
 .hero-image {
@@ -112,7 +105,6 @@
   justify-content: center;
   padding: 1.5rem 0 3rem 0;
   font-size: 1.3rem;
-  /* align-items: center; */
 }
 .divider {
   color: var(--gray-shade2);
@@ -137,16 +129,15 @@
   gap: 1rem;
 }
 .single-category {
-  background-color: var(--gray-shade1);
   position: relative;
 }
 .single-category h4 {
   position: absolute;
-  left: 4px;
-  bottom: 4px;
+  left: 1rem;
+  bottom: 0.5rem;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  background-color: #c7c7c7e5;
+  background-color: var(--transaparent-grey);
 }
 
 .category-image {
@@ -156,26 +147,26 @@
   opacity: 0.8;
 }
 .card-hw {
-  min-width: 350px;
-  max-width: 350px;
-  min-height: 230px;
-  max-height: 230px;
+  min-width: 22rem;
+  max-width: 22rem;
+  min-height: 14.375rem;
+  max-height: 14.375rem;
 }
 .ts-image {
   background-color: var(--gray-shade1);
   object-fit: cover;
   border-radius: 5px;
-  min-height: 350px;
-  max-height: 350px;
-  min-width: 350px;
-  max-width: 350px;
+  min-height: 22rem;
+  max-height: 22rem;
+  min-width: 22rem;
+  max-width: 22rem;
 }
 .top-selling {
   text-align: center;
   margin: 5rem 0;
 }
 .ts-h5 {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
