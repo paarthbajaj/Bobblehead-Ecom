@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./homepage.css" />
+    <link rel="stylesheet" href="./product-listing.css" />
+    <link
+      rel="stylesheet"
+      href="https://patched-ui.netlify.app/components.css"
+    />
+    <link rel="stylesheet" href="https://patched-ui.netlify.app/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>Shop</title>
+  </head>
+  <body>
+    <header class="desktop-header-container flex-row">
+      <div class="logo-container brand-logo">Quirky Face</div>
+      <nav class="top-navbar">
+        <a class="nav-items" href="#">Category 1</a>
+        <a class="nav-items" href="#">Category 2</a>
+        <a class="nav-items" href="#">Category 3</a>
+        <a class="nav-items" href="#">Category 4</a>
+        <a class="nav-items" href="#">Category 5</a>
+      </nav>
+      <div class="search-bar flex-row">
+        <a class="search-icon" href="#"><span class="fa fa-search"></span></a>
+        <input
+          class="input-search-bar"
+          placeholder="Search for products, categories and more"
+        />
+      </div>
+      <div class="header-actions flex-row">
+        <div class="action-link action-user">
+          <div class="fa fa-user icon"></div>
+          <div class="icon-label">Profile</div>
+        </div>
+        <div class="action-link action-wishlist">
+          <div class="fa fa-heart icon"></div>
+          <div class="icon-label">Wishlist</div>
+        </div>
+        <div class="action-link action-cart">
+          <div class="fa fa-bag-shopping icon"></div>
+          <div class="icon-label">Bag</div>
+        </div>
+      </div>
+    </header>
+    <main class="products-page">
+      <div class="filter-container m-radius flex-column">
+        <div class="product-sort flex-column l-radius">
+          <h2>Price</h2>
+          <input type="range" list="price" />
+          <datalist id="price">
+            <option value="0"></option>
+            <option value="50"></option>
+            <option value="100"></option>
+          </datalist>
+        </div>
+        <div class="product-sort flex-column l-radius">
+          <h2>Sort by</h2>
+          <label>
+            <input type="radio" name="sort" />
+            Low to High
+          </label>
+          <label>
+            <input type="radio" name="sort" />
+            High To Low
+          </label>
+        </div>
+        <div class="product-sort flex-column l-radius">
+          <h2>Categories</h2>
+          <label>
+            <input type="radio" name="categories" />
+            Marvel
+          </label>
+          <label>
+            <input type="radio" name="categories" />
+            DC
+          </label>
+          <label>
+            <input type="radio" name="categories" />
+            Anime
+          </label>
+          <label>
+            <input type="radio" name="categories" />
+            Keychains
+          </label>
+          <label>
+            <input type="radio" name="categories" />
+            Football
+          </label>
+          <label>
+            <input type="radio" name="categories" />
+            Pokemon
+          </label>
+        </div>
+        <div class="product-sort flex-column l-radius">
+          <h2>Rating</h2>
+          <label>
+            <input type="radio" name="rating" />
+            4 Stars & above
+          </label>
+          <label>
+            <input type="radio" name="rating" />
+            3 Stars & above
+          </label>
+          <label>
+            <input type="radio" name="rating" />
+            2 Stars & above
+          </label>
+          <label>
+            <input type="radio" name="rating" />
+            1 Star & above
+          </label>
+        </div>
+      </div>
+      <div class="products-listing">
+        <div class="list-container flex-row">
+          <div class="product-card m-radius">
+            <div class="img-wrap"></div>
+            <img
+              class="card-img"
+              src="./assets/images/captain-america-bobblehead.jpg"
+            />
+            <div class="card-content">
+              <h3 class="cursor-pointer">Product 1</h3>
+              <h4>₹299</h4>
+            </div>
+            <button class="btn btn-secondary pd-btn">
+              <i class="fa fa-bag-shopping"></i>
+              Add
+            </button>
+            <i class="fa fa-heart icon pd-wish-icon cursor-pointer"></i>
+          </div>
+          <div class="product-card m-radius">
+            <div class="img-wrap"></div>
+            <img
+              class="card-img"
+              src="./assets/images/ironman-bobblehead.png"
+            />
+            <div class="card-content">
+              <h3 class="cursor-pointer">Product 1</h3>
+              <h4>₹299</h4>
+            </div>
+            <button class="btn btn-secondary pd-btn">
+              <i class="fa fa-bag-shopping"></i>
+              Add
+            </button>
+            <i class="fa fa-heart icon pd-wish-icon cursor-pointer"></i>
+          </div>
+          <div class="product-card m-radius">
+            <div class="img-wrap"></div>
+            <img class="card-img" src="./assets/images/Naruto-bobblehead.jpg" />
+
+            <div class="card-content">
+              <h3 class="cursor-pointer">Product 1</h3>
+              <h4>₹299</h4>
+            </div>
+            <button class="btn btn-secondary pd-btn">
+              <i class="fa fa-bag-shopping"></i>
+              Add
+            </button>
+            <i class="fa fa-heart icon pd-wish-icon cursor-pointer"></i>
+          </div>
+          <div class="product-card m-radius">
+            <div class="img-wrap"></div>
+            <img
+              class="card-img"
+              src="./assets/images/pikachu-bobblehead.jpg"
+            />
+
+            <div class="card-content">
+              <h3 class="cursor-pointer">Product 1</h3>
+              <h4>₹299</h4>
+            </div>
+            <button class="btn btn-secondary pd-btn">
+              <i class="fa fa-bag-shopping"></i>
+              Add
+            </button>
+            <i class="fa fa-heart icon pd-wish-icon cursor-pointer"></i>
+          </div>
+          <div class="product-card m-radius">
+            <div class="img-wrap"></div>
+            <img
+              class="card-img"
+              src="./assets/images/roanldo-bobblehead.jpg"
+            />
+
+            <div class="card-content">
+              <h3 class="cursor-pointer">Product 1</h3>
+              <h4>₹299</h4>
+            </div>
+            <button class="btn btn-secondary pd-btn">
+              <i class="fa fa-bag-shopping"></i>
+              Add
+            </button>
+            <i class="fa fa-heart icon pd-wish-icon cursor-pointer"></i>
+          </div>
+          <div class="product-card m-radius">
+            <div class="img-wrap"></div>
+            <img
+              class="card-img"
+              src="./assets/images/Shinchan-bobblehead.jpg"
+            />
+
+            <div class="card-content">
+              <h3 class="cursor-pointer">Product 1</h3>
+              <h4>₹299</h4>
+            </div>
+            <button class="btn btn-secondary pd-btn">
+              <i class="fa fa-bag-shopping"></i>
+              Add
+            </button>
+            <i class="fa fa-heart icon pd-wish-icon cursor-pointer"></i>
+          </div>
+          <div class="product-card m-radius">
+            <div class="img-wrap"></div>
+            <img class="card-img" src="./assets/images/krillin.jpg" />
+
+            <div class="card-content">
+              <h3 class="cursor-pointer">Product 1</h3>
+              <h4>₹299</h4>
+            </div>
+            <button class="btn btn-secondary pd-btn">
+              <i class="fa fa-bag-shopping"></i>
+              Add
+            </button>
+            <i class="fa fa-heart icon pd-wish-icon cursor-pointer"></i>
+          </div>
+          <div class="product-card m-radius">
+            <div class="img-wrap"></div>
+            <img class="card-img" src="./assets/images/batman.jpg" />
+
+            <div class="card-content">
+              <h3 class="cursor-pointer">Product 1</h3>
+              <h4>₹299</h4>
+            </div>
+            <button class="btn btn-secondary pd-btn">
+              <i class="fa fa-bag-shopping"></i>
+              Add
+            </button>
+            <i class="fa fa-heart icon pd-wish-icon cursor-pointer"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="flex-row footer">
+      <div class="footer-col flex-column">
+        <div class="brand-logo">Quirky Face</div>
+        <p>
+          If you would like to experience the best and premium quality of quirky
+          toys in India, you are at the right place. Quirky Face is the ultimate
+          destination for all those quiry things on the shelf in your room.
+        </p>
+      </div>
+      <div class="flex-column footer-col">
+        <h3>Links</h3>
+        <a href="./index.html">Home</a>
+        <a href="#">Categories</a>
+        <a href="#">Products</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="flex-column footer-col">
+        <h3>Social Media</h3>
+        <a class="list" href="https://twitter.com/BajajPaarth">Twitter</a>
+        <a class="list" href="https://www.linkedin.com/in/paarth-bajaj/"
+          >Linkedin</a
+        >
+        <a class="list" href="https://github.com/paarthbajaj">Github</a>
+      </div>
+      <div class="flex-column footer-col">
+        <h3>Community</h3>
+        <a href="https://discord.gg/CZJ35CFB">TeamTanay Discord</a>
+        <a href="https://tanaypratap.com/">Mentor's website</a>
+        <a href="https://neog.camp/handbook/home">The Neog Camp</a>
+      </div>
+    </footer>
+  </body>
+</html>
