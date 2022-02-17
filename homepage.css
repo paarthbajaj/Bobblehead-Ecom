@@ -10,7 +10,8 @@
 :root {
   --gray-shade1: #f5f5f6;
   --gray-shade2: #696e79;
-  --grey-shade3: #495057;
+  --gray-shade3: #495057;
+  --gray-shade4: #f1f3f6;
   --transaparent-grey: #c7c7c7e5;
   --dark-blue: #0751a6;
   --blue-shade1: #024ca1;
@@ -192,7 +193,7 @@
 }
 .ts-product h4 {
   margin: 0.5rem 0 2rem 0;
-  color: var(--grey-shade3);
+  color: var(--gray-shade3);
 }
 a {
   text-decoration: none;
