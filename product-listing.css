@@ -41,14 +41,14 @@
 .img-wrap {
   position: absolute;
   z-index: 1;
-  background: rgb(237, 237, 237);
+  background: var(--gray-shade5);
   background: linear-gradient(
     0deg,
     rgba(237, 237, 237, 1) -50%,
     rgba(255, 255, 255, 0) 70%
   );
 }
-.card-content h3 {
+.cursor-pointer {
   cursor: pointer;
 }
 .pd-btn {
@@ -64,7 +64,6 @@
   right: 0.4rem;
   color: var(--gray-shade4);
   font-size: 1.4rem;
-  cursor: pointer;
 }
 .pd-wish-icon:hover {
   color: var(--dark-blue);
