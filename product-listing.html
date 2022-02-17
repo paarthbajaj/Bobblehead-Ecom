@@ -52,6 +52,15 @@
     <main class="products-page">
       <div class="filter-container m-radius flex-column">
         <div class="product-sort flex-column l-radius">
+          <h2>Price</h2>
+          <input type="range" list="price" />
+          <datalist id="price">
+            <option value="0"></option>
+            <option value="50"></option>
+            <option value="100"></option>
+          </datalist>
+        </div>
+        <div class="product-sort flex-column l-radius">
           <h2>Sort by</h2>
           <label>
             <input type="radio" name="sort" />
@@ -62,7 +71,7 @@
             High To Low
           </label>
         </div>
-        <div class="categories-filter flex-column l-radius">
+        <div class="product-sort flex-column l-radius">
           <h2>Categories</h2>
           <label>
             <input type="radio" name="categories" />
@@ -87,6 +96,25 @@
           <label>
             <input type="radio" name="categories" />
             Pokemon
+          </label>
+        </div>
+        <div class="product-sort flex-column l-radius">
+          <h2>Rating</h2>
+          <label>
+            <input type="radio" name="rating" />
+            4 Stars & above
+          </label>
+          <label>
+            <input type="radio" name="rating" />
+            3 Stars & above
+          </label>
+          <label>
+            <input type="radio" name="rating" />
+            2 Stars & above
+          </label>
+          <label>
+            <input type="radio" name="rating" />
+            1 Star & above
           </label>
         </div>
       </div>

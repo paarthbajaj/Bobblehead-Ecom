@@ -9,8 +9,7 @@
   left: 0.5vw;
   background-color: var(--white);
 }
-.product-sort,
-.categories-filter {
+.product-sort {
   margin: 1rem;
   width: 15vw;
   padding: 1rem;
