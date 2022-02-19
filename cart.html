@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./homepage.css" />
+    <link rel="stylesheet" href="./product-listing.css" />
+    <link rel="stylesheet" href="./cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>Cart</title>
+  </head>
+  <body>
+    <!-- *****************WEBSITE HEADER***************** -->
+    <header class="desktop-header-container flex-row">
+      <div class="logo-container brand-logo">Quirky Face</div>
+      <nav class="top-navbar">
+        <a class="nav-items" href="#">Category 1</a>
+        <a class="nav-items" href="#">Category 2</a>
+        <a class="nav-items" href="#">Category 3</a>
+        <a class="nav-items" href="#">Category 4</a>
+        <a class="nav-items" href="#">Category 5</a>
+      </nav>
+      <div class="search-bar flex-row">
+        <a class="search-icon" href="#"><span class="fa fa-search"></span></a>
+        <input
+          class="input-search-bar"
+          placeholder="Search for products, categories and more"
+        />
+      </div>
+      <div class="header-actions flex-row">
+        <div class="action-link action-user">
+          <div class="fa fa-user icon"></div>
+          <div class="icon-label">Profile</div>
+        </div>
+        <div class="action-link action-wishlist">
+          <div class="fa fa-heart icon"></div>
+          <div class="icon-label">Wishlist</div>
+        </div>
+        <div class="action-link action-cart">
+          <div class="fa fa-bag-shopping icon"></div>
+          <div class="icon-label">Bag</div>
+        </div>
+      </div>
+    </header>
+    <!-- *******************WEBSITE MAIN SECTION********* -->
+    <main class="page-wrapper flex-row g-1">
+      <div class="cart card-ui grow-1 mt-5 ml-1">
+        <div class="cart-header border-bottom-1 pb-5 flex-row">
+          <h2 class="grow-1">Shopping bag (1)</h2>
+          <h4>Price</h4>
+        </div>
+        <div class="product-cart mtb-3-4 flex-row">
+          <img
+            class="pd-cart-img"
+            src="./assets/images/ironman-bobblehead.png"
+          />
+          <div class="pd-cart-content pl-3-4 flex-column grow-1">
+            <span class="txt-5 fw-6 cursor-pointer"
+              >Ironman Bobblehead | Premium Quality | Marvel Character</span
+            >
+            <small>Eligible for FREE shipping</small>
+            <label for="quantity" class="mt-1">
+              Quantity:
+              <select name="quantity" id="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10+">10+</option>
+              </select>
+            </label>
+            <span class="cursor-pointer col-blue1 mt-1">Delete</span>
+          </div>
+          <div class="pd-cart-price">₹299</div>
+        </div>
+      </div>
+      <div class="cart-sidebar flex-column mt-5 mr-1">
+        <div class="card-ui flex-column">
+          <div>
+            <i class="fa fa-shield col-green1 txt-4"></i>
+            <span class="txt-5">100% Secure</span>
+          </div>
+          <span class="col-blue1">Original Products | Secure Payments</span>
+        </div>
+        <div class="cart-price cart card-ui">
+          <p class="col-green1 fw-6">
+            Your order is eligible for FREE Delivery
+          </p>
+          <div>
+            <span class="txt-5">Subtotal (1 item):</span>
+            <span class="txt-5 fw-6">₹299</span>
+          </div>
+          <button class="ecom-pri-btn mt-1">Proceed to Buy</button>
+        </div>
+      </div>
+    </main>
+    <!-- ************EMPTY CART************ -->
+    <div
+      class="empty-cart page-wrapper flex-column align-center justify-center"
+    >
+      <span class="txt-1">😔</span>
+      <span class="h5 mt-1">Oops! You shopping bag is empty. Let's shop.</span>
+      <a href="#">
+        <button class="ecom-pri-btn mt-1">Continue Shopping</button>
+      </a>
+    </div>
+
+    <!-- *******************WEBSITE FOOTER*************** -->
+    <footer class="flex-row footer">
+      <div class="footer-col flex-column">
+        <div class="brand-logo">Quirky Face</div>
+        <p>
+          If you would like to experience the best and premium quality of quirky
+          toys in India, you are at the right place. Quirky Face is the ultimate
+          destination for all those quiry things on the shelf in your room.
+        </p>
+      </div>
+      <div class="flex-column footer-col">
+        <h3>Links</h3>
+        <a href="./index.html">Home</a>
+        <a href="#">Categories</a>
+        <a href="#">Products</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="flex-column footer-col">
+        <h3>Social Media</h3>
+        <a class="list" href="https://twitter.com/BajajPaarth">Twitter</a>
+        <a class="list" href="https://www.linkedin.com/in/paarth-bajaj/"
+          >Linkedin</a
+        >
+        <a class="list" href="https://github.com/paarthbajaj">Github</a>
+      </div>
+      <div class="flex-column footer-col">
+        <h3>Community</h3>
+        <a href="https://discord.gg/CZJ35CFB">TeamTanay Discord</a>
+        <a href="https://tanaypratap.com/">Mentor's website</a>
+        <a href="https://neog.camp/handbook/home">The Neog Camp</a>
+      </div>
+    </footer>
+  </body>
+</html>
