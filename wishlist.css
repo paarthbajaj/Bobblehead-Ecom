@@ -1,0 +1,13 @@
+@import url(https://patched-ui.netlify.app/utility-classes.css);
+
+.gap-2 {
+  gap: 2rem;
+}
+.remove-btn {
+  color: var(--red);
+  background-color: var(--white);
+  border: none;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
