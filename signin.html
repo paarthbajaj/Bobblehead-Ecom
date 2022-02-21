@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./homepage.css" />
+    <link rel="stylesheet" href="./product-listing.css" />
+    <link rel="stylesheet" href="./cart.css" />
+    <link rel="stylesheet" href="./wishlist.css" />
+    <link rel="stylesheet" href="./auth.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>Cart</title>
+  </head>
+  <body class="log-page">
+    <!-- *****************WEBSITE HEADER***************** -->
+    <header class="login-header pt-5">
+      <div class="logo-container brand-logo">Quirky Face</div>
+    </header>
+    <main class="log-main m-radius">
+      <h1 class="txt-center">Login to your account</h1>
+      <form class="log-form flex-column g-1 align-center justify-center">
+        <label class="log-input">
+          <input
+            class="input log-input req-input"
+            type="email"
+            placeholder="Email"
+            required
+          />
+          <span class="error">Please enter your email</span>
+        </label>
+        <label class="log-input">
+          <input
+            class="input log-input req-input"
+            type="password"
+            placeholder="Password"
+            pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+            required
+          />
+          <span class="error"
+            >Password must contain eight characters, at least one letter, one
+            number and one special character</span
+          >
+        </label>
+        <button class="ecom-pri-btn" type="submit">Sign In</button>
+        <span class="or-divider">OR</span>
+        <button class="btn btn-secondary">Sign Up</button>
+      </form>
+    </main>
+  </body>
+</html>
